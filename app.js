@@ -30,5 +30,12 @@ function startCarousel() {
 }
 startCarousel();
 showItem(currentItem);
+carouselContainer.addEventListener('mouseenter', () => {
+  clearInterval(intervalId);
+});
+
+carouselContainer.addEventListener('mouseleave', () => {
+  startCarousel();
+});
 
 
