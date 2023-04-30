@@ -11,6 +11,7 @@ function showItem(index) {
 
   // Show the item at the specified index
   carouselItems[index].style.display = 'block';
+  console.log(index);
 }
 
 function nextItem() {
@@ -39,3 +40,8 @@ carouselContainer.addEventListener('mouseleave', () => {
 });
 
 
+const root = document.querySelector('#attachToMe');
+console.log(root);
+
+const personDiv = document.createElement("div");
+personDiv.classList.add("person");
